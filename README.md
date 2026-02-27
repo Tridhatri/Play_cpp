@@ -18,6 +18,18 @@ Each module contains:
 
 ## Modules
 
+### 00. C++ Syntax Basics
+**C++ Exclusive**: Core syntax features C doesn't have
+- Namespaces and `using`
+- `iostream` (type-safe I/O)
+- `std::string` vs C strings
+- `bool`, `nullptr`, `new`/`delete`
+- C++ casts (`static_cast`, etc.)
+- `auto`, range-based `for`, default parameters
+- `constexpr`, `enum class`, uniform initialization
+- Structured bindings (C++17)
+- **Why it matters**: Foundation for all C++ code you read and write
+
 ### 01. References
 **C++ Exclusive**: References don't exist in C
 - What are references vs pointers
@@ -137,7 +149,7 @@ g++ -std=c++17 -O2 -Wall -Wextra -o program file.cpp
 
 ## Recommended Learning Order
 
-1. **Start Here**: 01 → 02 → 03 → 04 (Fundamentals)
+1. **Start Here**: 00 → 01 → 02 → 03 → 04 (Fundamentals)
 2. **Essential OOP**: 05 → 06 → 07 (Object-Oriented)
 3. **Generic Programming**: 08 → 09 (Templates & STL)
 4. **Modern C++**: 10 → 11 → 12 → 13 (Advanced)
