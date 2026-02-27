@@ -9,6 +9,9 @@
 // TODO: Implement swap using references (no pointers!)
 void swap(int& a, int& b) {
     // Your code here
+    int temp = a;
+    a = b;
+    b = temp;
 }
 
 /*
@@ -22,8 +25,12 @@ struct LargeDataSet {
 
 // TODO: Implement this function to take a const reference
 // Print the first and last elements of data array and the description
-void printDataSetInfo(/* Add parameter here */) {
+void printDataSetInfo(struct LargeDataSet& dataset) {
     // Your code here
+    std::cout << "Description: " << dataset.description << std::endl;
+    std::cout << "First element: " << dataset.data[0] << std::endl;
+    std::cout << "Last element: " << dataset.data[999] << std::endl;
+
 }
 
 /*
@@ -35,6 +42,9 @@ void doubleAllValues(std::vector<int>& vec) {
     // Use a range-based for loop with a reference
     // for (auto& elem : vec) { ... }
     // Your code here
+    for(auto& i : vec){
+        i *=2;
+    }
 }
 
 /*
